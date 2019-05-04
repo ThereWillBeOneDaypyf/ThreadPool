@@ -2,7 +2,7 @@
 #include<iostream>
 ThreadPool :: ThreadPool(size_t sz) : stop(false)
 {
-    for (int i = 0; i < sz; ++i)
+    for (uint64_t i = 0; i < sz; ++i)
     {
         thread_in_pool.emplace_back(
             [&]() {
